@@ -1,12 +1,8 @@
 import random
 import os
-import time
 
 def limparTela():
-    if os.name == 'nt':
-        os.system("cls")
-    else:
-        os.system("clear")
+    os.system('cls' if os.name == 'nt' else 'clear')
 
-def RNG(a,b):
-    return random.randint(a,b)
+def RNG():
+    return random.randint(1, 100)
