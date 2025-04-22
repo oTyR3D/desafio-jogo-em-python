@@ -2,6 +2,7 @@
 # status, adicionar item, usar item, atacar -> mob
 
 class Jogador:
+<<<<<<< HEAD
     def __init__(self):
         self.nome = None
         self.vida = 10
@@ -9,6 +10,16 @@ class Jogador:
         self.forca = 5
         self.esmeraldas = 0
         self.inventario = {"poção de vida":0,"poção de força":0}
+=======
+    def __init__(self, nome, vida, armadura, forca, inventario, esmeraldas):
+        self.nome = nome
+        self.vida = vida
+        self.armadura = armadura
+        self.forca = forca
+        self.inventario = inventario
+        self.esmeraldas = esmeraldas
+        self.inventario = ['roupa','blusa']
+>>>>>>> master
 
     def get_nome(self):
         self.nome=input("Qual o nome de Jogador?\n")
@@ -26,6 +37,7 @@ class Jogador:
 
 
     def usar_item(self):
+<<<<<<< HEAD
         self.mostrar_inventario()
         x=int(input('Qual item deseja usar?'))-1
         if x==0:
@@ -36,3 +48,7 @@ class Jogador:
 
     def adicionar_item(self,item):
         pass
+=======
+        pass
+
+>>>>>>> master
