@@ -35,4 +35,4 @@ class Jogador:
             print("Aumento de força em 10 pontos")
 
     def adicionar_item(self,item):
-        if
+        pass
